@@ -1,5 +1,5 @@
-# Use OpenJDK 17 (slim version is small)
-FROM openjdk:17-jdk-slim
+# Use OpenJDK 17 slim version
+FROM openjdk:17-slim
 
 # Set working directory inside container
 WORKDIR /app
