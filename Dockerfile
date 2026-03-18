@@ -1,5 +1,5 @@
-# Use OpenJDK 17 slim version
-FROM openjdk:17-slim
+# Use a valid OpenJDK 17 image
+FROM eclipse-temurin:17-jdk
 
 # Set working directory inside container
 WORKDIR /app
@@ -18,5 +18,5 @@ RUN mvn clean package
 # Expose the port your Spring Boot app runs on
 EXPOSE 8080
 
-# Command to run your Spring Boot app
+# Run your Spring Boot app
 CMD ["java", "-jar", "target/loans-0.0.1-SNAPSHOT.jar"]
